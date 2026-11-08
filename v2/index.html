@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Isabella Qu · UX Research &amp; Design</title>
+<meta name="description" content="Isabella (Bella) Qu, Informatics student at the University of Washington. UX research and design, informed by data.">
+<meta name="theme-color" content="#f9efe7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;500;600&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:title" content="Isabella Qu · UX Research &amp; Design">
+<meta property="og:description" content="Research-led design, informed by data. Informatics at the University of Washington.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yuegequ.github.io/v2/">
+<meta property="og:image" content="https://yuegequ.github.io/v2/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="v2.css">
+<script>
+  (function (d) {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    d.classList.add('js-motion');
+    // If the animation libraries never arrive, show everything anyway.
+    setTimeout(function () { if (!window.gsap) d.classList.remove('js-motion'); }, 3500);
+  })(document.documentElement);
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__name">Isabella Qu</div>
+    <div class="loader__bar"><span></span></div>
+    <div class="loader__meta"><span>Portfolio</span><span>2026</span></div>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Isabella Qu, home">Isabella Qu <span class="badge">UW ’29</span></a>
+    <ul class="clock" aria-label="Local times">
+      <li><abbr title="Seattle" aria-hidden="true">SEA</abbr><span class="sr-only">Seattle</span><time data-tz="America/Los_Angeles">--:--</time></li>
+      <li><abbr title="Toronto" aria-hidden="true">YYZ</abbr><span class="sr-only">Toronto</span><time data-tz="America/Toronto">--:--</time></li>
+      <li><abbr title="Shanghai" aria-hidden="true">SHA</abbr><span class="sr-only">Shanghai</span><time data-tz="Asia/Shanghai">--:--</time></li>
+    </ul>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work" data-roll>Work</a>
+      <a href="about.html" data-roll>About</a>
+      <a class="hide-sm" href="../BellaQuResume.pdf" target="_blank" rel="noopener" data-roll>Résumé</a>
+    </nav>
+    <a class="btn-pill" href="#contact"><span class="dot" aria-hidden="true"></span>Get in touch</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__bg" data-gradient aria-hidden="true"></div>
+    <div class="hero__grain" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero__top">
+        <span class="label" data-hero-fade>UX research &amp; design</span>
+        <span class="label" data-hero-fade>Informatics · University of Washington · Seattle</span>
+      </div>
+      <h1 id="hero-title" data-split="hero">Research-led design, <em>informed by data.</em></h1>
+      <div class="hero__foot">
+        <p data-hero-fade>I’m Bella, a second-year Informatics student at the University of Washington, minoring in Applied Math. I study how people actually use things, and I use data to make design decisions better.</p>
+        <a class="scroll-cue label" href="#intro" data-hero-fade><i aria-hidden="true"></i>Scroll</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="intro" aria-labelledby="intro-title">
+    <h2 id="intro-title" class="sr-only">About</h2>
+    <div class="intro">
+      <div class="intro__side">
+        <span class="label">(01) About</span>
+        <img class="intro__photo" src="../assets/profile.jpg" width="800" height="800" alt="Isabella Qu smiling in a black blazer in front of a lit staircase" data-reveal="fade">
+      </div>
+      <div>
+        <p class="intro__text" data-reveal="lines">I start with people, not screens. Think-aloud interviews, affinity maps and quick prototypes show me where things break. <span class="soft">Data tells me how often. I grew up in Toronto, study in Seattle, and switch between English, Mandarin and French.</span></p>
+        <dl class="facts" data-reveal="rows">
+          <div><dt class="label">Studying</dt><dd>B.S. Informatics, Data Science</dd></div>
+          <div><dt class="label">Minor</dt><dd>Applied Mathematics</dd></div>
+          <div><dt class="label">Graduating</dt><dd>June 2029</dd></div>
+          <div><dt class="label">Languages</dt><dd>English, Mandarin, French</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section work dark" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label">(02) Selected work</span>
+        <div>
+          <h2 id="work-title" data-reveal="chars">Projects</h2>
+          <p data-reveal="fade" style="margin-top:18px">Three independent projects from 2024: an app, a physical product with a companion app, and packaging tested in a grocery store.</p>
+        </div>
+      </div>
+      <ul class="projects">
+        <li class="project">
+          <a href="studdybuddy.html" data-cursor="view">
+            <img class="project__thumb" src="assets/cover-studdy.jpg" width="1600" height="1000" loading="lazy" alt="">
+            <span class="project__n">01 / 2024</span>
+            <h3>Studdy Buddy</h3>
+            <p class="project__desc">A study-matching app that pairs students by when they want to study. Think-aloud interviews, a Rose, Bud, Thorn session, and Figma prototypes tested with students.</p>
+            <span class="project__meta"><span class="tag">UX research</span><span class="tag">Figma</span></span>
+          </a>
+        </li>
+        <li class="project">
+          <a href="lullaboo.html" data-cursor="view">
+            <img class="project__thumb" src="assets/cover-lullaboo.jpg" width="1600" height="1000" loading="lazy" alt="">
+            <span class="project__n">02 / 2024</span>
+            <h3>Lullaboo</h3>
+            <p class="project__desc">An Arduino teddy bear sleep companion. Touch gestures start sleep timers and dream recording, and a companion app keeps a dream diary.</p>
+            <span class="project__meta"><span class="tag">Arduino</span><span class="tag">Product</span></span>
+          </a>
+        </li>
+        <li class="project">
+          <a href="packipals.html" data-cursor="view">
+            <img class="project__thumb" src="assets/cover-packipals.jpg" width="1600" height="1000" loading="lazy" alt="">
+            <span class="project__n">03 / 2024</span>
+            <h3>PackiPals</h3>
+            <p class="project__desc">Origami-fold takeout packaging that keeps food warm, prototyped on paper and tested with real customers in a grocery store.</p>
+            <span class="project__meta"><span class="tag">Prototyping</span><span class="tag">Field test</span></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="gallery" aria-labelledby="art-title">
+    <div class="gallery__pin">
+      <div class="gallery__track">
+        <div class="gallery__intro">
+          <span class="label">(03) Art &amp; fashion</span>
+          <div>
+            <h2 id="art-title">Made by hand</h2>
+            <p style="margin-top:18px">Before UX, I made things physically: a fashion collection at RISD Pre-College and mixed-media art that was published in 2024.</p>
+          </div>
+        </div>
+        <figure>
+          <div class="frame"><img src="../art-my-head.jpg" width="1178" height="1351" loading="lazy" alt="“My Head,” a mixed-media self-portrait"></div>
+          <figcaption><span>My Head</span><span>Mixed media · 2024</span></figcaption>
+        </figure>
+        <figure class="wide">
+          <div class="frame"><img src="../fash-final-five.jpg" width="1440" height="888" loading="lazy" alt="The final five looks of the We Are Receipts fashion collection"></div>
+          <figcaption><span>We Are Receipts, final five</span><span>RISD Pre-College · 2023</span></figcaption>
+        </figure>
+        <figure>
+          <div class="frame"><img src="../fash-final-design.jpg" width="848" height="1005" loading="lazy" alt="The final We Are Receipts garment design"></div>
+          <figcaption><span>We Are Receipts, final design</span><span>Sewing, Procreate</span></figcaption>
+        </figure>
+        <figure>
+          <div class="frame"><img src="../fash-runway-1.jpg" width="304" height="428" loading="lazy" alt="A model wearing a We Are Receipts look at the RISD fashion show"></div>
+          <figcaption><span>RISD fashion show</span><span>Summer 2023</span></figcaption>
+        </figure>
+        <figure class="wide">
+          <div class="frame"><img src="../fash-moodboard.jpg" width="1448" height="816" loading="lazy" alt="Moodboard and inspiration for We Are Receipts"></div>
+          <figcaption><span>Moodboard and inspiration</span><span>We Are Receipts</span></figcaption>
+        </figure>
+        <figure>
+          <div class="frame"><img src="../art-color-exploration.jpg" width="794" height="1080" loading="lazy" alt="“Color Exploration,” an oil pastel piece"></div>
+          <figcaption><span>Color Exploration</span><span>Oil pastel · 2023</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="exp-title">
+    <div class="sec-head">
+      <span class="label">(04) Experience</span>
+      <h2 id="exp-title" data-reveal="chars">Experience</h2>
+    </div>
+    <ol class="rows" data-reveal="rows">
+      <li class="row">
+        <div><h3>UX Designer &amp; Researcher</h3><p class="sub">Independent projects</p></div>
+        <ul>
+          <li>Interviewed students and a school nurse with think-aloud protocols, then used affinity mapping to find the key pain points.</li>
+          <li>Built Figma prototypes, tested them with students, and simplified sign-up after seeing people quit partway through.</li>
+          <li>Mapped an 8-step user journey for Lullaboo and tested PackiPals with real customers in a grocery store.</li>
+        </ul>
+        <span class="label when">May 2024 – Jan 2025</span>
+      </li>
+      <li class="row">
+        <div><h3>Leader, Co.Wishes</h3><p class="sub">Toronto · Hybrid</p></div>
+        <ul>
+          <li>Led recruiting and training volunteers and set direction across several ongoing projects.</li>
+          <li>Helped design and build the website for our donation card program, across content and layout.</li>
+          <li>Built partnerships with local organizations and ran outreach to grow community involvement.</li>
+        </ul>
+        <span class="label when">Feb 2023 – Sep 2025</span>
+      </li>
+      <li class="row">
+        <div><h3>Lead, Art City Community Partnership</h3><p class="sub">Toronto · On-site</p></div>
+        <ul>
+          <li>Ran arts enrichment programs with local schools for kids aged 9 to 12, adapting the curriculum to each group.</li>
+          <li>Coordinated with school administrators and other leads to keep sessions aligned with each school’s goals.</li>
+        </ul>
+        <span class="label when">Sep 2022 – Mar 2025</span>
+      </li>
+      <li class="row">
+        <div><h3>University of Washington</h3><p class="sub">B.S. Informatics, Data Science · Minor in Applied Math</p></div>
+        <p>Coursework in data programming (Python), technical foundations of informatics (R), and databases and data modeling (SQL).</p>
+        <span class="label when">Sep 2025 – Jun 2029</span>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section wrap" aria-labelledby="skills-title" style="padding-top:0">
+    <div class="sec-head">
+      <span class="label">(05) Skills &amp; credentials</span>
+      <h2 id="skills-title" data-reveal="chars">Toolkit</h2>
+    </div>
+    <div class="skills" data-reveal="rows">
+      <div><h3>Research &amp; design</h3><ul class="chips"><li>UX research</li><li>Think-aloud testing</li><li>Affinity mapping</li><li>User journeys</li><li>Wireframing</li><li>Prototyping</li></ul></div>
+      <div><h3>Data &amp; code</h3><ul class="chips"><li>Python</li><li>R</li><li>SQL</li><li>Java</li><li>HTML</li><li>Arduino</li><li>Jupyter</li></ul></div>
+      <div><h3>Tools</h3><ul class="chips"><li>Figma</li><li>Miro</li><li>Procreate</li><li>Photoshop</li><li>IntelliJ IDEA</li></ul></div>
+    </div>
+    <ul class="rows" data-reveal="rows">
+      <li class="row">
+        <div><h3>UX/UI &amp; Prototyping Certification</h3><p class="sub">The Career Accelerator</p></div>
+        <p>Credential ID 191905824</p>
+        <span class="label when">Aug 2026</span>
+      </li>
+      <li class="row">
+        <div><h3>AI Professional Skills Certification</h3><p class="sub">The Career Accelerator</p></div>
+        <p>Credential ID 193901376</p>
+        <span class="label when">Sep 2026</span>
+      </li>
+      <li class="row">
+        <div><h3>RISD Pre-College Program</h3><p class="sub">Fashion design, certificate of completion</p></div>
+        <p><a class="inline" href="https://www.parchment.com/lp/award/26845566-905b-4c16-a564-772adfcc4b6d" target="_blank" rel="noopener">View certificate</a></p>
+        <span class="label when">Summer 2023</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section wrap" aria-labelledby="rec-title" style="padding-top:0">
+    <div class="sec-head">
+      <span class="label">(06) Recognition</span>
+      <h2 id="rec-title" data-reveal="chars">Recognition</h2>
+    </div>
+    <ul class="rows" data-reveal="rows">
+      <li class="row">
+        <div><h3>Journal of Student Research</h3><p class="sub">Published paper</p></div>
+        <p><a class="inline" href="https://www.semanticscholar.org/paper/The-Feasibility-of-Full-Sustainability-in-the-Qu/73da1e5d854fc701f78d7eda2277a86c698663c6" target="_blank" rel="noopener">“The Feasibility of Full Sustainability in the Fashion Industry”</a>, Vol. 13, No. 2.</p>
+        <span class="label when">2024</span>
+      </li>
+      <li class="row">
+        <div><h3>Young Voices Magazine</h3><p class="sub">Published artwork</p></div>
+        <p>“My Head,” mixed media.</p>
+        <span class="label when">2024</span>
+      </li>
+      <li class="row">
+        <div><h3>Project Prologue Summer Arts and Writing Challenge</h3><p class="sub">Award</p></div>
+        <p>“We Are Receipts,” fashion design.</p>
+        <span class="label when">2023</span>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot dark" id="contact">
+  <div class="wrap">
+    <span class="label">(07) Contact</span>
+    <a class="foot__cta" href="mailto:yuegequ@uw.edu" style="margin-top:24px"><span class="foot__cta-text" data-reveal>Let’s talk</span> <span class="arrow" aria-hidden="true">→</span></a>
+    <p style="margin-top:20px;color:var(--muted-2)">yuegequ@uw.edu</p>
+    <div class="foot__grid">
+      <div><span class="label">Pages</span><ul><li><a href="#work" data-roll>Work</a></li><li><a href="about.html" data-roll>About</a></li><li><a href="../BellaQuResume.pdf" target="_blank" rel="noopener" data-roll>Résumé</a></li></ul></div>
+      <div><span class="label">Elsewhere</span><ul><li><a href="https://www.linkedin.com/in/yue-ge-qu" target="_blank" rel="noopener" data-roll>LinkedIn</a></li><li><a href="mailto:yuegequ@uw.edu" data-roll>Email</a></li></ul></div>
+      <div><span class="label">Based in</span><ul><li>Seattle, Washington</li><li>From Toronto, Ontario</li></ul></div>
+    </div>
+    <div class="foot__base"><span>© 2026 Isabella (Yue Ge) Qu</span><a href="#main" data-roll>Back to top ↑</a></div>
+  </div>
+</footer>
+
+<div class="preview" aria-hidden="true">
+  <img src="assets/cover-studdy.jpg" alt="">
+  <img src="assets/cover-lullaboo.jpg" alt="">
+  <img src="assets/cover-packipals.jpg" alt="">
+</div>
+<div class="cursor" aria-hidden="true"><span>View</span></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomEase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
+<script src="gradient.js"></script>
+<script src="v2.js"></script>
+</body>
+</html>

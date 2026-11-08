@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lullaboo · Isabella Qu</title>
+<meta name="description" content="Lullaboo, an Arduino teddy bear sleep companion and dream recorder by Isabella Qu.">
+<meta name="theme-color" content="#f9efe7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;500;600&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:title" content="Lullaboo · Isabella Qu">
+<meta property="og:description" content="Lullaboo, an Arduino teddy bear sleep companion and dream recorder by Isabella Qu.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yuegequ.github.io/v2/lullaboo.html">
+<meta property="og:image" content="https://yuegequ.github.io/v2/assets/cover-lullaboo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="v2.css">
+<script>
+  (function (d) {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    d.classList.add('js-motion');
+    setTimeout(function () { if (!window.gsap) d.classList.remove('js-motion'); }, 3500);
+  })(document.documentElement);
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Isabella Qu, home">Isabella Qu <span class="badge">UW ’29</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html#work" data-roll aria-current="page">Work</a>
+      <a href="about.html" data-roll>About</a>
+      <a class="hide-sm" href="../BellaQuResume.pdf" target="_blank" rel="noopener" data-roll>Résumé</a>
+    </nav>
+    <a class="btn-pill" href="#contact"><span class="dot" aria-hidden="true"></span>Get in touch</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <section class="cs-hero">
+      <a class="back label" href="index.html#work"><span aria-hidden="true">←</span> <span data-roll>All work</span></a>
+      <h1 data-split="hero">Lullaboo</h1>
+      <p class="lede" data-hero-fade>A teddy bear alarm clock that makes falling asleep and waking up softer, with no phone in your hand.</p>
+    </section>
+    <dl class="cs-meta" data-reveal="rows"><div><dt class="label">Year</dt><dd>2024, April to July</dd></div><div><dt class="label">Role</dt><dd>Individual project</dd></div><div><dt class="label">Tools</dt><dd>Figma, Procreate, Arduino, sewing</dd></div><div><dt class="label">Size</dt><dd>30 × 20 × 5 cm</dd></div></dl>
+    <div class="cs-cover" data-reveal="image" data-parallax><img src="assets/cover-lullaboo.jpg" width="1600" height="1000" alt="The Lullaboo bear with an eye mask and heart, beside two companion app screens for dream recordings and wellbeing records"></div>
+
+  <section class="cs-sec">
+    <header><span class="label">(01)</span><h2 data-reveal="chars">Overview</h2></header>
+    <div class="cs-body">
+      <p>Lullaboo is a soft, cuddly bear that works as a sleep timer and dream recorder, built on Arduino. It tracks body temperature to estimate sleep quality, and a voice recorder lets you capture a dream before you forget it.</p>
+      <p>The companion app keeps a diary of your dreams, shows sleep stats, and can use AI to turn a dream into a short film or image to share.</p>
+    </div>
+  </section>
+  <section class="cs-sec">
+    <header><span class="label">(02)</span><h2 data-reveal="chars">The product</h2></header>
+    <div class="cs-body">
+      <ul class="features" data-reveal="rows">
+        <li><span class="n">01</span><h4>Sleep timer</h4><p>Lower the eye mask to start the sleep timer.</p></li>
+        <li><span class="n">02</span><h4>Nap timer</h4><p>Long press the nose to start a nap timer.</p></li>
+        <li><span class="n">03</span><h4>Dream recorder</h4><p>Press the heart to record a dream by voice, before it fades.</p></li>
+        <li><span class="n">04</span><h4>Soft exterior</h4><p>A cuddly body replaces the hard shape of a bedside alarm clock.</p></li>
+      </ul>
+      <div class="grid-3">
+        <figure class="fig crop" data-reveal="fade"><div class="frame"><img src="../lb-bear-front.jpg" width="787" height="1140" loading="lazy" alt="The Lullaboo bear, front view"></div><figcaption>Front</figcaption></figure>
+        <figure class="fig crop" data-reveal="fade"><div class="frame"><img src="../lb-bear-back.jpg" width="787" height="1400" loading="lazy" alt="The Lullaboo bear, back view"></div><figcaption>Back</figcaption></figure>
+        <figure class="fig crop" data-reveal="fade"><div class="frame"><img src="../lb-bear-side.jpg" width="787" height="1400" loading="lazy" alt="The Lullaboo bear, side view"></div><figcaption>Side</figcaption></figure>
+      </div>
+      <div class="proto dark" data-reveal="fade">
+        <div>
+          <span class="label">Interactive prototype</span>
+          <h3>Try it yourself</h3>
+          <p>Tap through the Lullaboo app: dream diary, sleep stats, and the AI dream generator.</p>
+          <a class="btn-pill" href="https://www.figma.com/proto/wVEmORZKVMJaG9F57WFAjl/Nap-Timer--LULLABOO--draft?node-id=33-21807&amp;t=AQ7riscZSQszKsk1-1" target="_blank" rel="noopener">Open in Figma <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="phone-frame"><div class="screen" style="aspect-ratio:393/852"><iframe src="https://embed.figma.com/proto/wVEmORZKVMJaG9F57WFAjl/Nap-Timer--LULLABOO--draft?node-id=33-21807&amp;embed-host=share&amp;scaling=scale-down&amp;hide-ui=1&amp;hotspot-hints=0&amp;bg-color=ffffff" allowfullscreen loading="lazy" title="Lullaboo prototype"></iframe></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="cs-sec">
+    <header><span class="label">(03)</span><h2 data-reveal="chars">Problem and insights</h2></header>
+    <div class="cs-body">
+      <p>Phones keep people up, alarm clocks aren’t pleasant to wake up to, and dreams disappear minutes after waking.</p>
+      <ul class="pairs" data-reveal="rows">
+        <li><span>Distracted by technology before bed</span><span class="ar" aria-hidden="true">→</span><span>Every control lives on the bear, not the phone</span></li>
+        <li><span>Hard, uncomfortable bedside alarm clocks</span><span class="ar" aria-hidden="true">→</span><span>A soft, cuddly alarm clock</span></li>
+        <li><span>Dreams are hard to capture and share</span><span class="ar" aria-hidden="true">→</span><span>Voice-activated recorder and AI dream films</span></li>
+      </ul>
+    </div>
+  </section>
+  <section class="cs-sec">
+    <header><span class="label">(04)</span><h2 data-reveal="chars">Sketches</h2></header>
+    <div class="cs-body">
+      <p>I started on paper: forms for the clock, a storyboard of one night with Lullaboo, then the app screens.</p>
+      <div class="grid-2">
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lb-paper-concepts.jpg" width="755" height="800" loading="lazy" alt="Pencil sketches of clock and bear forms"></div><figcaption><b>Form exploration.</b> Early sketches of the clock and bear.</figcaption></figure>
+        <figure class="fig" data-reveal="fade"><div class="frame"><img src="../lb-bear-held.jpg" width="787" height="1400" loading="lazy" alt="The finished Lullaboo prototype held in someone’s arms"></div><figcaption><b>The finished prototype.</b></figcaption></figure>
+      </div>
+      <h3>User journey</h3>
+      <div class="grid-3">
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lullaboo-sketch-1.png" width="2732" height="2048" loading="lazy" alt=""></div><figcaption>1. Anna picks up Lullaboo</figcaption></figure>
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lullaboo-sketch-2.png" width="2732" height="2048" loading="lazy" alt=""></div><figcaption>2. She pulls down the eye mask to start the sleep timer</figcaption></figure>
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lullaboo-sketch-3.png" width="2732" height="2048" loading="lazy" alt=""></div><figcaption>3. She falls asleep without distractions</figcaption></figure>
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lullaboo-sketch-4.png" width="2732" height="2048" loading="lazy" alt=""></div><figcaption>4. She wakes up</figcaption></figure>
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lullaboo-sketch-5.png" width="2732" height="2048" loading="lazy" alt=""></div><figcaption>5. Before she forgets her dream, she presses the heart to record</figcaption></figure>
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lullaboo-sketch-6.png" width="2732" height="2048" loading="lazy" alt=""></div><figcaption>6. She shares her dream with friends</figcaption></figure>
+      </div>
+      <h3>App sketches</h3>
+      <div class="grid-3">
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lb-paper-app-1.jpg" width="710" height="1250" loading="lazy" alt=""></div><figcaption>Recording, diary, and statistics screens</figcaption></figure>
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lb-paper-app-2.jpg" width="702" height="1240" loading="lazy" alt=""></div><figcaption>Home screen and quick navigation</figcaption></figure>
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lb-paper-app-3.jpg" width="725" height="1195" loading="lazy" alt=""></div><figcaption>Enhance and created screens</figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <section class="cs-sec">
+    <header><span class="label">(05)</span><h2 data-reveal="chars">The app</h2></header>
+    <div class="cs-body">
+      <p>High-fidelity screens for the companion app, from the home page to the AI dream generator.</p>
+      <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lb-wf-1.png" width="1680" height="881" loading="lazy" alt=""></div><figcaption><b>1.</b> Home page</figcaption></figure>
+      <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lb-wf-2.png" width="1680" height="852" loading="lazy" alt=""></div><figcaption><b>2.</b> Dream diaries</figcaption></figure>
+      <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lb-wf-4.png" width="1251" height="852" loading="lazy" alt=""></div><figcaption><b>4.</b> User statistics</figcaption></figure>
+      <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lb-wf-6.png" width="1680" height="852" loading="lazy" alt=""></div><figcaption><b>6.</b> AI dream film and image generator</figcaption></figure>
+      <div class="grid-2">
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lb-wf-3.png" width="822" height="852" loading="lazy" alt=""></div><figcaption><b>3.</b> Settings and timer</figcaption></figure>
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../lb-wf-5.png" width="822" height="852" loading="lazy" alt=""></div><figcaption><b>5.</b> Personalized AI suggestions</figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <section class="cs-sec">
+    <header><span class="label">(06)</span><h2 data-reveal="chars">Looking ahead</h2></header>
+    <div class="cs-body">
+      <ul class="features" data-reveal="rows">
+        <li><span class="n">Next</span><h4>Health functions</h4><p>Monitor more of your health, like breathing and heartbeat.</p></li>
+        <li><span class="n">Next</span><h4>Soothing wake-up</h4><p>A gentle wake-up with no harsh alarm, using vibration or similar.</p></li>
+      </ul>
+    </div>
+  </section>
+    <a class="next" href="packipals.html" data-cursor="view"><span class="label">Next project</span><strong>PackiPals →</strong></a>
+  </div>
+</main>
+
+<footer class="foot dark" id="contact">
+  <div class="wrap">
+    <span class="label">Contact</span>
+    <a class="foot__cta" href="mailto:yuegequ@uw.edu" style="margin-top:24px"><span class="foot__cta-text" data-reveal>Let’s talk</span> <span class="arrow" aria-hidden="true">→</span></a>
+    <p style="margin-top:20px;color:var(--muted-2)">yuegequ@uw.edu</p>
+    <div class="foot__grid">
+      <div><span class="label">Pages</span><ul><li><a href="index.html#work" data-roll>Work</a></li><li><a href="about.html" data-roll>About</a></li><li><a href="../BellaQuResume.pdf" target="_blank" rel="noopener" data-roll>Résumé</a></li></ul></div>
+      <div><span class="label">Elsewhere</span><ul><li><a href="https://www.linkedin.com/in/yue-ge-qu" target="_blank" rel="noopener" data-roll>LinkedIn</a></li><li><a href="mailto:yuegequ@uw.edu" data-roll>Email</a></li></ul></div>
+      <div><span class="label">Based in</span><ul><li>Seattle, Washington</li><li>From Toronto, Ontario</li></ul></div>
+    </div>
+    <div class="foot__base"><span>© 2026 Isabella (Yue Ge) Qu</span><a href="#main" data-roll>Back to top ↑</a></div>
+  </div>
+</footer>
+<div class="cursor" aria-hidden="true"><span>View</span></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomEase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
+<script src="v2.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studdy Buddy · Isabella Qu</title>
+<meta name="description" content="Studdy Buddy, a study-matching app by Isabella Qu: research, persona, and Figma prototypes.">
+<meta name="theme-color" content="#f9efe7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;500;600&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:title" content="Studdy Buddy · Isabella Qu">
+<meta property="og:description" content="Studdy Buddy, a study-matching app by Isabella Qu: research, persona, and Figma prototypes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yuegequ.github.io/v2/studdybuddy.html">
+<meta property="og:image" content="https://yuegequ.github.io/v2/assets/cover-studdy.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="v2.css">
+<script>
+  (function (d) {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    d.classList.add('js-motion');
+    setTimeout(function () { if (!window.gsap) d.classList.remove('js-motion'); }, 3500);
+  })(document.documentElement);
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Isabella Qu, home">Isabella Qu <span class="badge">UW ’29</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html#work" data-roll aria-current="page">Work</a>
+      <a href="about.html" data-roll>About</a>
+      <a class="hide-sm" href="../BellaQuResume.pdf" target="_blank" rel="noopener" data-roll>Résumé</a>
+    </nav>
+    <a class="btn-pill" href="#contact"><span class="dot" aria-hidden="true"></span>Get in touch</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <section class="cs-hero">
+      <a class="back label" href="index.html#work"><span aria-hidden="true">←</span> <span data-roll>All work</span></a>
+      <h1 data-split="hero">Studdy Buddy</h1>
+      <p class="lede" data-hero-fade>A study-matching app that pairs students by when they want to study, so organizing a group stops being the stressful part.</p>
+    </section>
+    <dl class="cs-meta" data-reveal="rows"><div><dt class="label">Year</dt><dd>2024, March to May</dd></div><div><dt class="label">Role</dt><dd>Individual project</dd></div><div><dt class="label">Tools</dt><dd>Figma, Miro, Procreate, Photoshop</dd></div><div><dt class="label">Focus</dt><dd>UX research, UI design</dd></div></dl>
+    <div class="cs-cover" data-reveal="image" data-parallax><img src="assets/cover-studdy.jpg" width="1600" height="1000" alt="Three Studdy Buddy screens in phone frames: Find a Buddy, a chat about meeting at the library, and the Buddy shop"></div>
+
+  <section class="cs-sec">
+    <header><span class="label">(01)</span><h2 data-reveal="chars">Overview</h2></header>
+    <div class="cs-body">
+      <p>After hearing friends talk about school stress and mismatched schedules, I designed Studdy Buddy. The app groups students by when they want to study, which removes the back-and-forth of organizing a study group.</p>
+      <p>I also added tracking features, which got positive feedback in pilot tests with peers.</p>
+    </div>
+  </section>
+  <section class="cs-sec">
+    <header><span class="label">(02)</span><h2 data-reveal="chars">The issue</h2></header>
+    <div class="cs-body">
+      <div class="stats" data-reveal="rows">
+        <div class="stat"><b>45.1%</b><p>of students report tremendous stress, according to Research.com.</p></div>
+        <div class="stat"><b>78%</b><p>of the students I interviewed named school as one of their main stressors.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="cs-sec">
+    <header><span class="label">(03)</span><h2 data-reveal="chars">Research</h2></header>
+    <div class="cs-body">
+      <p>I interviewed 7 people at different high schools using think-aloud protocols, then used affinity mapping to find the key pain points.</p>
+      <blockquote class="quote" data-reveal="fade">“…multiple assignments piling up really increases students’ stress, especially if they can’t organize it properly or they have other commitments, like sports…”<cite>Ms. Whites, school nurse</cite></blockquote>
+      <blockquote class="quote" data-reveal="fade">“…stigma against mental health makes it really hard to reach out for support… I’d rather get academic help and decrease my stress there…”<cite>Tyler, Grade 12 student</cite></blockquote>
+      <h3>Persona: Emily Wang, 16</h3>
+      <div class="grid-2" data-reveal="rows">
+        <div class="stat"><span class="label">Frustrations</span><p style="margin-top:12px">Overwhelming workload. Disconnected from friends. Running out of time.</p></div>
+        <div class="stat"><span class="label">Wants and needs</span><p style="margin-top:12px">Academic help. Peer connections. Time management.</p></div>
+      </div>
+      <h3>Problem statements → insights</h3>
+      <ul class="pairs" data-reveal="rows">
+        <li><span>Need to organize assignments and other commitments</span><span class="ar" aria-hidden="true">→</span><span>Flexible calendar or task management system</span></li>
+        <li><span>Meeting deadlines</span><span class="ar" aria-hidden="true">→</span><span>Automated deadline alerts or progress tracker</span></li>
+        <li><span>Working with friends but struggling to set a time</span><span class="ar" aria-hidden="true">→</span><span>Group time-matching or real-time availability</span></li>
+      </ul>
+    </div>
+  </section>
+  <section class="cs-sec">
+    <header><span class="label">(04)</span><h2 data-reveal="chars">The product</h2></header>
+    <div class="cs-body">
+      <ul class="features" data-reveal="rows">
+        <li><span class="n">01</span><h4>Find a Buddy</h4><p>Finds friends with similar free time, so picking a time is easy.</p></li>
+        <li><span class="n">02</span><h4>Chat box</h4><p>A temporary chat to agree on a place. It closes once both people confirm the task is done, to cut distractions. History is saved.</p></li>
+        <li><span class="n">03</span><h4>Reward system</h4><p>Study hours and finished tasks earn points to spend on dressing up your Buddy.</p></li>
+      </ul>
+      <figure class="fig tint" data-reveal="image"><div class="frame"><img src="../sb-callout.png" width="1421" height="932" loading="lazy" alt="Studdy Buddy screens for Find a Buddy, chat and the reward shop"></div></figure>
+      <div class="proto dark" data-reveal="fade">
+        <div>
+          <span class="label">Interactive prototype</span>
+          <h3>Try it yourself</h3>
+          <p>Tap through Studdy Buddy and see how matching and tracking work.</p>
+          <a class="btn-pill" href="https://www.figma.com/proto/jpZfwkqwZxOXUCQCejEJaz/Revised-StuddyBuddy?t=AQ7riscZSQszKsk1-1" target="_blank" rel="noopener">Open in Figma <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="phone-frame"><div class="screen" style="aspect-ratio:430/932"><iframe src="https://embed.figma.com/proto/jpZfwkqwZxOXUCQCejEJaz/Revised-StuddyBuddy?embed-host=share&amp;scaling=scale-down&amp;hide-ui=1&amp;hotspot-hints=0&amp;bg-color=ffffff" allowfullscreen loading="lazy" title="Studdy Buddy prototype"></iframe></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="cs-sec">
+    <header><span class="label">(05)</span><h2 data-reveal="chars">Scenario and navigation</h2></header>
+    <div class="cs-body">
+      <div class="grid-2">
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../sb-storyboard.png" width="601" height="956" loading="lazy" alt="Storyboard of Abby and Ben using Studdy Buddy to meet at the library"></div><figcaption><b>Scenario.</b> Abby is stressed and wants peer support. She sees Ben is free and requests a study time. He accepts, they meet at the library, and both feel less stressed.</figcaption></figure>
+        <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../studdy-sitemap.png" width="616" height="440" loading="lazy" alt="Hand-drawn navigation map of the Studdy Buddy app"></div><figcaption><b>Navigation sketch.</b> Mapping out the app before opening Figma.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <section class="cs-sec">
+    <header><span class="label">(06)</span><h2 data-reveal="chars">Wireframes</h2></header>
+    <div class="cs-body">
+      <p>High-fidelity screens for the main flows. After seeing testers quit partway through sign-up, I cut the number of sign-up steps.</p>
+      <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../sb-wf-1.png" width="1362" height="932" loading="lazy" alt=""></div><figcaption><b>1.</b> Adding a time slot</figcaption></figure>
+      <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../sb-wf-2.png" width="1362" height="932" loading="lazy" alt=""></div><figcaption><b>2.</b> Find a buddy</figcaption></figure>
+      <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../sb-wf-3.png" width="1828" height="932" loading="lazy" alt=""></div><figcaption><b>3.</b> Friends and direct requests</figcaption></figure>
+      <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../sb-wf-4.png" width="1362" height="932" loading="lazy" alt=""></div><figcaption><b>4.</b> Successfully matched</figcaption></figure>
+      <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../sb-wf-5.png" width="917" height="932" loading="lazy" alt=""></div><figcaption><b>5.</b> Reward system</figcaption></figure>
+      <figure class="fig tint" data-reveal="fade"><div class="frame"><img src="../sb-wf-6.png" width="1362" height="932" loading="lazy" alt=""></div><figcaption><b>6.</b> Statistics, settings, and profile details</figcaption></figure>
+    </div>
+  </section>
+    <a class="next" href="lullaboo.html" data-cursor="view"><span class="label">Next project</span><strong>Lullaboo →</strong></a>
+  </div>
+</main>
+
+<footer class="foot dark" id="contact">
+  <div class="wrap">
+    <span class="label">Contact</span>
+    <a class="foot__cta" href="mailto:yuegequ@uw.edu" style="margin-top:24px"><span class="foot__cta-text" data-reveal>Let’s talk</span> <span class="arrow" aria-hidden="true">→</span></a>
+    <p style="margin-top:20px;color:var(--muted-2)">yuegequ@uw.edu</p>
+    <div class="foot__grid">
+      <div><span class="label">Pages</span><ul><li><a href="index.html#work" data-roll>Work</a></li><li><a href="about.html" data-roll>About</a></li><li><a href="../BellaQuResume.pdf" target="_blank" rel="noopener" data-roll>Résumé</a></li></ul></div>
+      <div><span class="label">Elsewhere</span><ul><li><a href="https://www.linkedin.com/in/yue-ge-qu" target="_blank" rel="noopener" data-roll>LinkedIn</a></li><li><a href="mailto:yuegequ@uw.edu" data-roll>Email</a></li></ul></div>
+      <div><span class="label">Based in</span><ul><li>Seattle, Washington</li><li>From Toronto, Ontario</li></ul></div>
+    </div>
+    <div class="foot__base"><span>© 2026 Isabella (Yue Ge) Qu</span><a href="#main" data-roll>Back to top ↑</a></div>
+  </div>
+</footer>
+<div class="cursor" aria-hidden="true"><span>View</span></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomEase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
+<script src="v2.js"></script>
+</body>
+</html>
